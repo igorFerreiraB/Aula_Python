@@ -3,9 +3,9 @@
 #     lista.append(item*2)
 
 # list comprehensions
-# lista = [item**2 for item in range(10)]
+lista = [item**2 for item in range(10)]
 
-# print (lista)
+print (lista)
 
 # list comprehensions também pode conter condicionais para criar listas ou modificar listas existentes
 
