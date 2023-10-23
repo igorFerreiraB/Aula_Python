@@ -11,4 +11,4 @@ def cria_multiplicador(multiplicador):
         return numero * multiplicador
     return multiplica
 
-print(executa(soma, 2, 4))
+print(executa(soma, 5, 5))
