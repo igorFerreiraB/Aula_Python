@@ -1,6 +1,6 @@
 dados_cidades = []
 
-for i in range(1, 6):
+for i in range(1, 2):
     cidade = {}
     cidade["codigo"] = int(input(f"Digite o código da cidade {i}: "))
     cidade["veiculos"] = int(input(f"Digite o número de veículos de passeio (em 1999) da cidade {i}: "))

@@ -23,7 +23,7 @@ class Aluno:
         self.nome = nome
         self.nota = nota
 
-arq = open("arquivo.txt")
+arq = open("python/arquivo.txt")
 linhas = arq.readlines()
 turma = Turma()
 

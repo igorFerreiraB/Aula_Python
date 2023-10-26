@@ -1,4 +1,4 @@
-arq = open("arquivo.txt")
+arq = open("python/arquivo.txt")
 linhas = arq.readlines()
 
 alunos = []
@@ -10,35 +10,33 @@ def titulo(txt):
     print(f"  {txt}")
     print("-" * tam)
 
-# Tratativa
-try: 
-    # Laço principal
-    for linha in linhas:
 
-        # Quebra de linha e formatação
-        linha = linha.strip()
-        linha = linha.split(",")
+# Laço principal
+for linha in linhas:
 
-        # Chamando itens
-        alunos.append(linha[0])
-        notas.append(float(linha[1]))
-except:
-    print("ERRO!!")
-else: 
-    dicionario = dict(zip(alunos, notas))
-    # Soma das notas
-    soma_notas = sum(dicionario.values())
-    media = soma_notas / len(alunos)
+    # Quebra de linha e formatação
+    linha = linha.strip()
+    linha = linha.split(",")
+
+    # Chamando itens
+    alunos.append(linha[0])
+    notas.append(float(linha[1]))
 
 
-    print(dicionario)
-    titulo("↓↓↓ MEDIA DA SALA ↓↓↓")
-    print(f"{media:.2f}")
-    titulo("↓↓↓ ALUNOS NOTAS > 6 ↓↓↓")
+dicionario = dict(zip(alunos, notas))
+# Soma das notas
+soma_notas = sum(dicionario.values())
+media = soma_notas / len(alunos)
 
-    for nota in notas:
-        if nota > 6:
-            print(nota)
+
+print(dicionario)
+titulo("↓↓↓ MEDIA DA SALA ↓↓↓")
+print(f"{media:.2f}")
+titulo("↓↓↓ ALUNOS NOTAS > 6 ↓↓↓")
+
+for nota in notas:
+    if nota > 6:
+        print(nota)
 
 
 
