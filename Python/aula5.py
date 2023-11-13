@@ -4,4 +4,4 @@ def escreva(texto):
     print(f"  {texto}")
     print("-" * tamanho)    
 
-escreva("IGOR FERREIRA")
+escreva(print("IGOR FERREIRA"))
