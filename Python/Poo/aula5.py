@@ -10,6 +10,6 @@ class Pessoa:
     
 pessoa1 = Pessoa("igor", 16)
 pessoa2 = Pessoa("jose", 28)
-
+    
 print(pessoa1.ano_nascimento())
 print(pessoa2.ano_nascimento())
