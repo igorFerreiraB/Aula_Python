@@ -7,3 +7,21 @@
 # 5 - Faça a ligação entre Carro e um Fabricante
 # Obs.: Um fabricante pode fabricar vários carros
 # Exiba o nome do carro, motor e fabricante na tela
+
+class Carro:
+    def __init__(self, nome):
+        self.nome = nome
+
+    def nome_carro(self):
+        ...
+        
+class Motor:
+    def __init__(self, nome):
+        self.nome = nome
+
+class Fabricante:
+    def __init__(self, nome):
+        self.nome = nome
+
+carro = Carro('Gol')
+print(carro)
