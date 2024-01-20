@@ -11,9 +11,6 @@
 class Carro:
     def __init__(self, nome):
         self.nome = nome
-
-    def nome_carro(self):
-        ...
         
 class Motor:
     def __init__(self, nome):
@@ -23,5 +20,3 @@ class Fabricante:
     def __init__(self, nome):
         self.nome = nome
 
-carro = Carro('Gol')
-print(carro)
