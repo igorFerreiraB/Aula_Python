@@ -9,7 +9,7 @@ class Carro:
         print(f"{self.nome} está ligado...")
 
     def acelerar(self):
-        acelerar = input("Deseja aceleralo s/n ?: ")
+        acelerar = input("Deseja acelerar s/n ?: ")
         entrada_minuscula = acelerar.lower()
         if entrada_minuscula == "s":
             return f"{self.nome} está acelerando..."
